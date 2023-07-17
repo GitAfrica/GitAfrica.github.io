@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+  </head>
+  <body>
+    <form action="post">
+      <fieldset>
+        <legend>Add User</legend>
+        <!-- Basic information  -->
+        <label for="first-name">First Name:</label>
+        <input
+          type="text"
+          id="first-name"
+          name="first-name"
+          placeholder="First Name"
+        /><br />
+
+        <label for="last-name">Last Name:</label>
+        <input
+          type="text"
+          id="last-name"
+          name="last-name"
+          placeholder="Last Name"
+        /><br />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Email" /><br />
+        <!-- drop-down menu -->
+        <label for="status">Status:</label>
+        <select id="status" name="status">
+          <option value="student">Student</option>
+          <option value="teacher">Teacher</option>
+          <option value="guest">Guest</option></select
+        ><br />
+        <!-- radio button for favourite programming language -->
+        <p>Choose your favourite programming language:</p>
+        <input
+          type="radio"
+          id="html"
+          name="programming-language"
+          value="HTML"
+        />
+        <label for="html">HTML</label><br />
+        <input type="radio" id="css" name="programming-language" value="CSS" />
+        <label for="css">CSS</label><br />
+        <input
+          type="radio"
+          id="javascript"
+          name="programming-language"
+          value="JavaScript"
+        />
+        <label for="javascript">JavaScript</label><br />
+        <!-- Comments and current date -->
+        <label for="comments">Comments:</label><br />
+        <textarea
+          id="comments"
+          name="comments"
+          placeholder="comment here..."
+        ></textarea
+        ><br />
+
+        <label for="current-date">Current Date:</label>
+        <input type="date" id="current-date" name="current-date" /><br />
+
+        <!-- Submission -->
+        <label for="newsletter">Sign up for the newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter" /><br />
+
+        <label for="terms">Agree to terms and conditions:</label>
+        <input type="checkbox" id="terms" name="terms" /><br />
+
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
